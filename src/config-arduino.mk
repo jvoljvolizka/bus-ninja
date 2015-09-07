@@ -16,5 +16,5 @@ CONFIG_HW_UART=y
 # Console on hw_uart
 CONFIG_HW_UART_CONSOLE=y
 # Note: MCU type and speed for Duemilanove
-PROGRAM_CMD=/usr/bin/avrdude -C /etc/avrdude/avrdude.conf -pm328 -cstk500v1 -P/dev/ttyUSB0 -b115200 -D -Uflash:w:$(TARGET).hex
+PROGRAM_CMD=/usr/bin/avrdude -v -C /etc/avrdude/avrdude.conf -pm328p  -carduino -P/dev/ttyACM0 -b115200 -D -Uflash:w:$(TARGET).hex
 

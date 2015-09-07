@@ -56,7 +56,9 @@ CFLAGS += -fshort-enums
 #CFLAGS += --param inline-call-cost=2  
 CFLAGS += -finline-limit=3 
 CFLAGS += -fno-inline-small-functions 
-CFLAGS += -Wall -Werror
+CFLAGS += -Wall
+CFLAGS += -Wno-deprecated-declarations -D__PROG_TYPES_COMPAT__
+#CFLAGS += -Wall -Werror
 
 CFLAGS += -DUSBMODE_DEFAULT=USBMODE_CDC
 

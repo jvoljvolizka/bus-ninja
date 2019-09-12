@@ -23,7 +23,7 @@ static BOOL connected = FALSE;
 
 /**********************************************************************/
 
-USB_Descriptor_Device_t PROGMEM DeviceDescriptor =
+const USB_Descriptor_Device_t PROGMEM DeviceDescriptor =
 {
 	.Header                 = {.Size = sizeof(USB_Descriptor_Device_t), .Type = DTYPE_Device},
 		
@@ -45,21 +45,21 @@ USB_Descriptor_Device_t PROGMEM DeviceDescriptor =
 	.NumberOfConfigurations = FIXED_NUM_CONFIGURATIONS
 };
 
-USB_Descriptor_String_t PROGMEM LanguageString =
+const USB_Descriptor_String_t PROGMEM LanguageString =
 {
 	.Header                 = {.Size = USB_STRING_LEN(1), .Type = DTYPE_String},
 		
 	.UnicodeString          = {LANGUAGE_ID_ENG}
 };
 
-USB_Descriptor_String_t PROGMEM ManufacturerString =
+const USB_Descriptor_String_t PROGMEM ManufacturerString =
 {
 	.Header                 = {.Size = USB_STRING_LEN(11), .Type = DTYPE_String},
 		
 	.UnicodeString          = L"StoneyLabs"
 };
 
-USB_Descriptor_String_t PROGMEM ProductString =
+const USB_Descriptor_String_t PROGMEM ProductString =
 {
 	.Header                 = {.Size = USB_STRING_LEN(13), .Type = DTYPE_String},
 		

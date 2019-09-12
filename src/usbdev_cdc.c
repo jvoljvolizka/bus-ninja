@@ -61,7 +61,7 @@ static USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface =
     },
 };
 
-USB_Descriptor_Configuration_CDC_t PROGMEM ConfigurationDescriptor_CDC =
+const USB_Descriptor_Configuration_CDC_t PROGMEM ConfigurationDescriptor_CDC =
 {
 	.Config = 
 		{
@@ -167,10 +167,10 @@ USB_Descriptor_Configuration_CDC_t PROGMEM ConfigurationDescriptor_CDC =
 
 /**********************************************************************/
 
-extern USB_Descriptor_Device_t PROGMEM DeviceDescriptor;
-extern USB_Descriptor_String_t PROGMEM LanguageString;
-extern USB_Descriptor_String_t PROGMEM ManufacturerString;
-extern USB_Descriptor_String_t PROGMEM ProductString;
+extern const USB_Descriptor_Device_t PROGMEM DeviceDescriptor;
+extern const USB_Descriptor_String_t PROGMEM LanguageString;
+extern const USB_Descriptor_String_t PROGMEM ManufacturerString;
+extern  const USB_Descriptor_String_t PROGMEM ProductString;
 
 /**********************************************************************/
 
